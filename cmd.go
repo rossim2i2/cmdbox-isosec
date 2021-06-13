@@ -1,25 +1,40 @@
 package cmd
 
 import (
+	"fmt"
+	"time"
+
 	"github.com/rwxrob/cmdbox"
-	_ "github.com/rwxrob/cmdbox-help"
-	_ "github.com/rwxrob/cmdbox-version"
 )
 
 func init() {
-	x := cmdbox.New("foo", "help", "version")
-	x.Usage = ``
-	x.Summary = `just a sample foo command`
+	x := cmdbox.New("isosec", "help", "version")
+	x.Usage = `[help|version]`
+	x.Summary = `Current UTC time in YYYYMMDDhhmmss format`
+	x.Version = `v0.0.1`
 
-	// TODO consider removing for minimal builds
 	x.Description = `
-		The *foo* command does cool stuff. You can start the description
-		here and wrap it to look nice and it will just work. You can use
-		minimal markdown with one, two, or three stars and wrap things with
-		< and > to get uppercase with underline, as with options in a man
-		page. That is, if you use the cmdbox-help command module. Other
-		cmdbox-help modules might handle this Description differently but,
-		by convention, all are supposed to support the same minimal
-		CmdBox markdown.`
+		The *isosec* command returnd the current time in the following format:
+		YYYYMMDDhhmmss. All time is displayed as UTC time.`
 
+	x.Method = func(args []string) (err error) {
+
+		if len(args) > 0 {
+			switch args[0] {
+			case "help":
+				fmt.Println(x.Description)
+				return nil
+			case "version":
+				fmt.Println(x.Version)
+				return nil
+			default:
+				return x.UsageError()
+			}
+			return nil
+		}
+
+		fmt.Println(time.Now().UTC().Format("20060102150405"))
+		return nil
+
+	}
 }
