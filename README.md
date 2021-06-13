@@ -18,7 +18,7 @@ CmdBox composite monolith.
 Use `go install` to install as a standalone:
 
 ```
-go install github.com/rossim2i2/cmdbox-_isosec/isosec@latest
+go install github.com/rossim2i2/cmdbox-isosec/isosec@latest
 ```
 
 Use `import` with a blank identifier to be composed:
@@ -26,7 +26,7 @@ Use `import` with a blank identifier to be composed:
 ```go
 import (
   "github.com/rwxrob/cmdbox"
-  _ "github.com/rossim2i2/cmdbox-_isosec"
+  _ "github.com/rossim2i2/cmdbox-isosec"
 )
 ```
 

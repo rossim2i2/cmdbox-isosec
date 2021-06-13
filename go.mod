@@ -1,4 +1,4 @@
-module github.com/rossim2i2/cmdbox-_isosec
+module github.com/rossim2i2/cmdbox-isosec
 
 go 1.16
 
