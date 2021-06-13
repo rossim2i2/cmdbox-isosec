@@ -1,4 +1,4 @@
-# CmdBox Command Module Template
+# CmdBox isosec Command
 
 [![GoDoc](https://godoc.org/cmdbox-_isosec?status.svg)](https://godoc.org/cmdbox-_isosec)
 [![License](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](LICENSE)
