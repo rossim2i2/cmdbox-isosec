@@ -30,7 +30,6 @@ func init() {
 			default:
 				return x.UsageError()
 			}
-			return nil
 		}
 
 		fmt.Println(time.Now().UTC().Format("20060102150405"))
