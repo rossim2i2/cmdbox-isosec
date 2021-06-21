@@ -8,7 +8,7 @@ import (
 )
 
 func init() {
-	x := cmdbox.New("isosec", "help", "version")
+	x := cmdbox.Add("isosec", "help", "version")
 	x.Usage = `[help|version]`
 	x.Summary = `Current UTC time in YYYYMMDDhhmmss format`
 	x.Version = `v0.0.1`
