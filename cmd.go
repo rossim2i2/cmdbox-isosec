@@ -9,9 +9,9 @@ import (
 
 func init() {
 	x := cmdbox.Add("isosec", "help", "version")
-	x.Usage = `[help|version]`
+	x.Usage = `[h|help|version]`
 	x.Summary = `Current UTC time in YYYYMMDDhhmmss format`
-	x.Version = `v0.0.2`
+	x.Version = `v0.0.3`
 
 	x.Description = `
 		The *isosec* command returnd the current time in the following format:
@@ -21,7 +21,7 @@ func init() {
 
 		if len(args) > 0 {
 			switch args[0] {
-			case "help":
+			case "h", "help":
 				fmt.Println(x.Description)
 				return nil
 			case "version":
