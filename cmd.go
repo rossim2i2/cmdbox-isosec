@@ -11,7 +11,7 @@ func init() {
 	x := cmdbox.Add("isosec", "help", "version")
 	x.Usage = `[help|version]`
 	x.Summary = `Current UTC time in YYYYMMDDhhmmss format`
-	x.Version = `v0.0.1`
+	x.Version = `v0.0.2`
 
 	x.Description = `
 		The *isosec* command returnd the current time in the following format:
