@@ -1,7 +1,8 @@
-github.com/rwxrob/cmdbox v0.1.5 h1:6vQdN7zfl97yjIZOD3Rbk5zC6ArigasN+gBqw+XhLW4=
 github.com/rwxrob/cmdbox v0.1.5/go.mod h1:OBRzTIUTlpGictLK7OuKJoF0SBJxA1/GdUwLDz0GcpA=
 github.com/rwxrob/cmdbox v0.1.7 h1:mxyEqVXIVN8kImi9GvWyDns2Gby9wR1Nbt8QnbBswFg=
 github.com/rwxrob/cmdbox v0.1.7/go.mod h1:OBRzTIUTlpGictLK7OuKJoF0SBJxA1/GdUwLDz0GcpA=
+github.com/rwxrob/cmdbox-version v1.0.0 h1:awn2B/27pFtN6tygXZRSNA8YCQ6me7dgFAH4HjqBLGg=
+github.com/rwxrob/cmdbox-version v1.0.0/go.mod h1:QWsVzSmaPU1k+RtFGcHP3ALcG8UW0tYl6ygSZvH3WMo=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b h1:h8qDotaEPuJATrMmW04NCwg7v22aHH28wwpauUhK9Oo=

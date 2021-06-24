@@ -5,13 +5,14 @@ import (
 	"time"
 
 	"github.com/rwxrob/cmdbox"
+	_ "github.com/rwxrob/cmdbox-version"
 )
 
 func init() {
 	x := cmdbox.Add("isosec", "help", "version")
 	x.Usage = `[h|help|version]`
 	x.Summary = `Current UTC time in YYYYMMDDhhmmss format`
-	x.Version = `v0.0.3`
+	x.Version = `v0.0.7`
 
 	x.Description = `
 		The *isosec* command returnd the current time in the following format:
@@ -25,7 +26,7 @@ func init() {
 				fmt.Println(x.Description)
 				return nil
 			case "version":
-				fmt.Println(x.Version)
+				fmt.Println(x.VersionLine())
 				return nil
 			default:
 				return x.UsageError()
